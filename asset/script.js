@@ -30,8 +30,8 @@ document.getElementById("interface").innerHTML = `
               <p class="text-center"> ${data.product.brands} - Poids : ${data.product.quantity}</p>
               <p class="text-center"></p>
             <div class="d-flex justify-content-center gap-4"> 
-            <img src="./asset/img/novascore/nova${data.product.nova_groups}.svg" alt="" class=''>
-            <img src="./asset/img/nutriscore/${data.product.nutriscore_grade}.svg" alt="" class=''>
+            <img src="./asset/img/Novascore/Nova${data.product.nova_groups}.svg" alt="" class=''>
+            <img src="./asset/img/Nutriscore/${data.product.nutriscore_grade}.svg" alt="" class=''>
             </div>
               <p class="text-center mt-4">ingredients : ${data.product.ingredients_text_fr}</p>
             
