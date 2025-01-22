@@ -19,6 +19,13 @@ console.log(data.product.nova_groups)
 console.log(data.product.brands)
 console.log(data.product)
 
+if (data.product.nova_groups!==undefined && data.product.nova_groups!==null){
+    nova = `<img src="./asset/img/Novascore/Nova${data.product.nova_groups}.svg" alt="" class=''>`
+}
+if (data.product.nutriscore_grade!==undefined && data.product.nutriscore_grade!==null){
+    nutriscore = `<img src="./asset/img/Nutriscore/${data.product.nutriscore_grade}.svg" alt="" class=''>`
+}
+
 document.getElementById("interface").innerHTML = `
    <div class="text-white">
             <p class="fs-3 mt-2 text-center fw-bold">${data.product.product_name_fr}</p>
@@ -30,8 +37,8 @@ document.getElementById("interface").innerHTML = `
               <p class="text-center"> ${data.product.brands} - Poids : ${data.product.quantity}</p>
               <p class="text-center"></p>
             <div class="d-flex justify-content-center gap-4"> 
-            <img src="./asset/img/Novascore/Nova${data.product.nova_groups}.svg" alt="" class=''>
-            <img src="./asset/img/Nutriscore/${data.product.nutriscore_grade}.svg" alt="" class=''>
+            ${nutriscore}
+            ${nova}
             </div>
               <p class="text-center mt-4">ingredients : ${data.product.ingredients_text_fr}</p>
             
