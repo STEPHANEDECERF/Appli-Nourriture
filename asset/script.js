@@ -1,7 +1,9 @@
 
 const urlParams = new URLSearchParams(window.location.search);
 id = urlParams.get(`id`)
-
+if (id==null || id == "") {
+    id = 3596690128096
+}
 
 fetch(`https://world.openfoodfacts.org/api/v3/product/${id}`)
     .then(response => response.json())
