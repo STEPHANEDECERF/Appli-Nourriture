@@ -26,7 +26,7 @@ fetch(`https://world.openfoodfacts.org/api/v3/product/${id}`)
 
         console.log(data.product.nutriscore_grade)
         if (data.product.nutriscore_grade !== undefined || data.product.nutriscore_grade !== null) {
-            nutriscore = `<img src="asset/img/Nutriscore/${data.product.nutriscore_grade}.svg" alt="" class=''>`
+            nutriscore = `<img src="asset/img/Nutri/${data.product.nutriscore_grade}.svg" alt="" class=''>`
             console.log(nutriscore)
         }
 
