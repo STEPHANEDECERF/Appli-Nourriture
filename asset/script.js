@@ -20,13 +20,13 @@ fetch(`https://world.openfoodfacts.org/api/v3/product/${id}`)
         console.log(data.product)
 
         if (data.product.nova_groups !== undefined || data.product.nova_groups !== null) {
-            nova = `<img src="./asset/img/Novascore/Nova${data.product.nova_groups}.svg" alt="" class=''>`
+            nova = `<img src="asset/img/Novascore/Nova${data.product.nova_groups}.svg" alt="" class=''>`
             console.log(nova)
         }
 
         console.log(data.product.nutriscore_grade)
         if (data.product.nutriscore_grade !== undefined || data.product.nutriscore_grade !== null) {
-            nutriscore = `<img src="./asset/img/Nutriscore/${data.product.nutriscore_grade}.svg" alt="" class=''>`
+            nutriscore = `<img src="asset/img/Nutriscore/${data.product.nutriscore_grade}.svg" alt="" class=''>`
             console.log(nutriscore)
         }
 
